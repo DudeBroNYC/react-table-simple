@@ -13,10 +13,14 @@ const range = len => {
 const newPerson = () => {
   const statusChance = Math.random();
   return {
-    firstName: namor.generate({ words: 1, numbers: 0 }),
-    lastName: namor.generate({ words: 1, numbers: 0 }),
-    wins: Math.floor(Math.random() * 3),
-    losses: Math.floor(Math.random() * 3)
+    firstName: "Jeff",
+    lastName: "Olsen",
+    wins: "6",
+    losses: "1"
+    //firstName: namor.generate({ words: 1, numbers: 0 }),
+    //lastName: namor.generate({ words: 1, numbers: 0 }),
+    //wins: Math.floor(Math.random() * 3),
+    //losses: Math.floor(Math.random() * 3)
     //age: Math.floor(Math.random() * 30),
     //visits: Math.floor(Math.random() * 100),
     //progress: Math.floor(Math.random() * 100),

@@ -29,8 +29,8 @@ class App extends React.Component {
                 },
                 {
                   Header: "Last Name",
-                  id: "lastName",
-                  accessor: d => d.lastName
+                  accessor: "lastName"
+                  //accessor: d => d.lastName
                 }
               ]
             },
@@ -52,8 +52,6 @@ class App extends React.Component {
           className="-striped -highlight"
         />
         <br />
-        <Tips />
-        <Logo />
       </div>
     );
   }
