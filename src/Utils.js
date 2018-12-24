@@ -4,19 +4,22 @@ import "./index.css";
 
 const range = len => {
   const arr = [];
-  for (let i = 0; i < len; i++) {
+  for (let i = 1; i < len; i++) {
     arr.push(i);
   }
   return arr;
 };
 
 const newPerson = () => {
-  const statusChance = Math.random();
+  //const statusChance = Math.abs(-4.7);
+  //const statusChance = Math.random();
   return {
     firstName: "Jeff",
     lastName: "Olsen",
-    wins: "6",
-    losses: "1"
+    wins: Math.abs(6),
+    losses: Math.abs(1)
+    //wins: "6",
+    //losses: "1"
     //firstName: namor.generate({ words: 1, numbers: 0 }),
     //lastName: namor.generate({ words: 1, numbers: 0 }),
     //wins: Math.floor(Math.random() * 3),
