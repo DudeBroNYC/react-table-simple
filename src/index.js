@@ -38,8 +38,12 @@ class App extends React.Component {
               Header: "Match Info",
               columns: [
                 {
-                  Header: "Record",
-                  accessor: "record"
+                  Header: "Wins",
+                  accessor: "wins"
+                },
+                {
+                  Header: "Losses",
+                  accessor: "losses"
                 }
               ]
             }

@@ -15,7 +15,8 @@ const newPerson = () => {
   return {
     firstName: namor.generate({ words: 1, numbers: 0 }),
     lastName: namor.generate({ words: 1, numbers: 0 }),
-    record: Math.floor(Math.random() * 30)
+    wins: Math.floor(Math.random() * 3),
+    losses: Math.floor(Math.random() * 3)
     //age: Math.floor(Math.random() * 30),
     //visits: Math.floor(Math.random() * 100),
     //progress: Math.floor(Math.random() * 100),
