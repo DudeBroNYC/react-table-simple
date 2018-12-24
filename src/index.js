@@ -68,7 +68,7 @@ class App extends React.Component {
                 <br />
                 <br />
                 <ReactTable
-                  data={data}
+                  //data={data}
                   columns={columns}
                   defaultPageSize={3}
                   showPagination={false}
@@ -85,64 +85,9 @@ class App extends React.Component {
           }}
         />
         <br />
-        <Tips />
-        <Logo />
       </div>
     );
   }
 }
 
 render(<App />, document.getElementById("root"));
-
-/*class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      data: makeData()
-    };
-  }
-  render() {
-    const { data } = this.state;
-    return (
-      <div>
-        <ReactTable
-          data={data}
-          columns={[
-            {
-              Header: "Name",
-              columns: [
-                {
-                  Header: "First Name",
-                  accessor: "firstName"
-                },
-                {
-                  Header: "Last Name",
-                  accessor: "lastName"
-                  //accessor: d => d.lastName
-                }
-              ]
-            },
-            {
-              Header: "Match Info",
-              columns: [
-                {
-                  Header: "Wins",
-                  accessor: "wins"
-                },
-                {
-                  Header: "Losses",
-                  accessor: "losses"
-                }
-              ]
-            }
-          ]}
-          defaultPageSize={10}
-          className="-striped -highlight"
-        />
-        <br />
-      </div>
-    );
-  }
-}
-
-render(<App />, document.getElementById("root"));*/
