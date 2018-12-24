@@ -35,11 +35,24 @@ class App extends React.Component {
               ]
             },
             {
-              Header: "Match Info",
+              Header: "Info",
               columns: [
                 {
-                  Header: "Record",
-                  accessor: "record"
+                  Header: "Age",
+                  accessor: "age"
+                },
+                {
+                  Header: "Status",
+                  accessor: "status"
+                }
+              ]
+            },
+            {
+              Header: "Stats",
+              columns: [
+                {
+                  Header: "Visits",
+                  accessor: "visits"
                 }
               ]
             }
