@@ -14,8 +14,8 @@ const newPerson = () => {
   //const statusChance = Math.abs(-4.7);
   //const statusChance = Math.random();
   return {
-    firstName: "Jeff",
-    lastName: "Olsen",
+    firstName: "Joe",
+    lastName: "Smith",
     wins: Math.abs(6),
     losses: Math.abs(1)
   };
